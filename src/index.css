@@ -23,12 +23,22 @@ body,
   height: 100%;
 }
 
+html {
+  font-size: calc(24px + (42 - 24) * ((100vw - 320px) / (740 - 320)));
+}
+
 body {
-  font-size: 18px;
   font-family: 'Roboto', sans-serif;
 }
 
 button {
   border: none;
   font: inherit;
+  background: none;
+}
+
+@media (min-width: 741px) {
+  html {
+    font-size: 42px;
+  }
 }

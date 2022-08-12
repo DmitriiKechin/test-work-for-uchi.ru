@@ -8,7 +8,7 @@ export const Wrapper = styled.button<{ fontSize?: string }>`
   line-height: 1;
   color: ${(props) => props.theme.colors.accent};
   font-size: ${(props) => props.fontSize || 'inherit'};
-  font-weight: 300;
+  font-weight: inherit;
 
   background: none;
   cursor: pointer;
@@ -25,6 +25,6 @@ export const Wrapper = styled.button<{ fontSize?: string }>`
 
   &:active {
     background-color: ${(props) => props.theme.colors.accent};
-    box-shadow: inset 0 0 0.1em ${(props) => props.theme.colors.dark};
+    box-shadow: inset 0 0 0.1em ${(props) => props.theme.colors.Secondary};
   }
 `;

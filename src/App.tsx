@@ -5,6 +5,7 @@ import { MainPage } from './pages/main/mainPage';
 const Wrapper = styled.div`
   display: flex;
   justify-content: center;
+  height: 100%;
 `;
 
 function App() {

@@ -13,6 +13,7 @@ declare module 'styled-components' {
       light: string;
       gray: string;
       Primary: string;
+      Secondary: string;
       background: string;
     };
   }
