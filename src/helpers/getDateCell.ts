@@ -14,5 +14,8 @@ export const getDateCell = (
   dateMin.setSeconds(Math.floor(((activeCell[1] * 8.57143) % 1) * 60));
   dateMax.setSeconds(Math.floor((((activeCell[1] + 1) * 8.57143) % 1) * 60));
 
+  dateMin.setMilliseconds(0);
+  dateMax.setMilliseconds(0);
+
   return { dateMin, dateMax };
 };
